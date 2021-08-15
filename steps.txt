@@ -4,20 +4,30 @@
 - Create the src/index.js and public/index.html files
 - Create index.html basic structure
 
-- Install webpack and webpack-cli as dev-dependencies >> npm install webpack webpack-cli --save-dev
+- Install webpack and webpack-cli as dev-dependencies:
+    npm install webpack webpack-cli --save-dev
+
 - Create webpack config file with basic structure >> webpack.config.js
 
-- Install react and react-dom >> npm install react react-dom
+- Install react and react-dom:
+    npm install react react-dom
 - Create basic react component in src/index.js 
 
 - Starting git repository >> git init
 - Creating .gitignore file and adding node_modules folder
 
-- Installing @babel/core, @babel/preset-env, @babel/preset-react and @babel-loader >> npm i @babel/core @babel/preset-env @babel/preset-react babel-loader -D
+- Installing @babel/core, @babel/preset-env, @babel/preset-react and @babel-loader:
+    npm i @babel/core @babel/preset-env @babel/preset-react babel-loader -D
+    
 - Creating .babelrc file
 - Adding presets do .babelrc file
 - Configuring webpack to use babel-loader
 
-- Installing webpack-dev-server >> npm i webpack-dev-server -D
+- Installing webpack-dev-server:
+    npm i webpack-dev-server -D
+
 - Configuring webpack server in webpack.config.js file
 - Adding webpack server script
+
+- Installing css-loader, style-loader, sass-loader and node-sass dependencies:
+    npm i -D css-loader style-loader sass-loader node-sass
