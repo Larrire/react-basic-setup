@@ -10,8 +10,8 @@ const App = () => {
     return (
         <>
             <h1>{title}</h1>
-            <button onClick={()=>setTitle(inputValue)}>Click me</button>
-            <input value={inputValue} onChange={(event)=>{setInputValue( event.target.value )}} />
+            <div><input placeholder="Enter your name" value={inputValue} onChange={(event)=>{setInputValue( event.target.value )}} /></div>
+            <div><button onClick={()=>setTitle('Welcome to React, ' + (inputValue ? inputValue : 'Anonymous person') + '!'  )}>Send</button></div>
         </>
     )
 }
