@@ -12,3 +12,6 @@
 
 - Starting git repository >> git init
 - Creating .gitignore file and adding node_modules folder
+
+- Installing @babel/core, @babel/preset-env, @babel/preset-react and @babel-loader >> npm i @babel/core @babel/preset-env @babel/preset-react babel-loader -D
+- Creating .babelrc file
