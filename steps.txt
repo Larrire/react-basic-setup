@@ -15,3 +15,9 @@
 
 - Installing @babel/core, @babel/preset-env, @babel/preset-react and @babel-loader >> npm i @babel/core @babel/preset-env @babel/preset-react babel-loader -D
 - Creating .babelrc file
+- Adding presets do .babelrc file
+- Configuring webpack to use babel-loader
+
+- Installing webpack-dev-server >> npm i webpack-dev-server -D
+- Configuring webpack server in webpack.config.js file
+- Adding webpack server script

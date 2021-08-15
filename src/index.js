@@ -9,7 +9,7 @@ const App = () => {
     return (
         <>
             <h1>{title}</h1>
-            <button onClick={()=>setTitle(inputValue)}>Set title</button>
+            <button onClick={()=>setTitle(inputValue)}>Click me</button>
             <input value={inputValue} onChange={(event)=>{setInputValue( event.target.value )}} />
         </>
     )
