@@ -1,0 +1,14 @@
+
+- Create the project folder
+- Create the src and public directories
+- Create the src/index.js and public/index.html files
+- Create index.html basic structure
+
+- Install webpack and webpack-cli as dev-dependencies >> npm install webpack webpack-cli --save-dev
+- Create webpack config file with basic structure >> webpack.config.js
+
+- Install react and react-dom >> npm install react react-dom
+- Create basic react component in src/index.js 
+
+- Starting git repository >> git init
+- Creating .gitignore file and adding node_modules folder
