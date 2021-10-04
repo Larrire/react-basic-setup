@@ -1,0 +1,50 @@
+.modal-delete {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+
+  h2 {
+    color: red;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: #777;
+    margin: 30px 0;
+  }
+
+  .div-buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      padding: 9px;
+      // border: 1px solid black;
+      border-radius: 5px;
+      min-width: 75px;
+      cursor: pointer;
+  
+      & + button {
+        margin-left: 10px;
+      }
+    }
+  
+    .delete-button {
+      box-shadow: 0 0 5px red;
+      // background: red;
+      // border-color: firebrick;
+      // color: #fff;
+    }
+  
+    // .cancel-button {
+    //   background: #ddd;
+    //   border-color: darkgray;
+    //   color: #333;
+
+    //   &:hover {
+    //     background-color: #bbb;
+    //   }
+    // }
+  }
+}

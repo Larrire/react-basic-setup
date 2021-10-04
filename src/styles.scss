@@ -1,40 +1,87 @@
-$border: 1px solid #ddd;
-$border-radius: 5px;
+$sm: max-width 450px;
+$laravel-color: #F05340;
+$react-color: #61DBFB;
 
-body {
-    height: 100vh;
-    color: cyan;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    div {
-        margin: 50px 0;
-    }
-
-    input {
-        margin: 50px 0;
-        border: $border;
-        border-radius: $border-radius;
-        padding: 10px;
-        width: 300px;
-        margin: 0 auto;
-        font-size: 20px;
-        background-color: #555;
-        color: cyan;
-        font-weight: bold;
-    }
-
-    button {
-        border: $border;
-        border-radius: $border-radius;
-        padding: 10px;
-        width: 150px;
-        background-color: cyan;
-        font-size: 18px;
-        font-weight: bold;
-        color: #333;
-    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.card {
+  margin: 24px;
+  padding: 16px;
+  box-shadow: 5px 5px 25px lightgray;
+  border-radius: 10px;
+  width: 1000px;
+}
+
+.div-error {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  background-color: #f88;
+  box-shadow: 0 0 1px red;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+html {
+  & > body {
+    display: flex;
+    justify-content: center;
+  
+    header.card {
+      margin-bottom: 10px;
+
+      h1 {
+        color: #555;
+        text-align: center;
+        font-family: sans-serif;
+  
+        .span-laravel {
+          color: $laravel-color;
+        }
+        .span-react {
+          color: $react-color;
+        }
+      }
+    }
+  
+    main.card {
+      header {
+        display: flex;
+        justify-content: space-between;
+  
+        h2 {
+          font-family: sans-serif;
+          color: #555;
+        }
+      }
+  
+      #content {
+        overflow: scroll;
+        max-height: 75vh;
+        padding: 5px;
+  
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        &{
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+  
+        .no-items-alert {
+          text-align: center;
+          color: #555;
+          font-family: sans-serif;
+        }
+      }
+    }
+  }  
+}

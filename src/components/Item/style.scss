@@ -1,0 +1,30 @@
+article {
+  box-shadow: 1px 1px 5px #ddd;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 15px;
+  color: #777;
+  align-items: center;
+  font-family: sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 1px 1px 5px #61DBFB;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 3px #F05340;
+  }
+
+  .button-edit:hover {
+    // border-color: #0cc;
+    // box-shadow: 0px 0px 7px #0cc;
+    box-shadow: 0px 0px 7px #095;
+  }
+  .button-delete:hover {
+    // border-color: #d00;
+    box-shadow: 0px 0px 7px #d00;
+  }
+}

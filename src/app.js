@@ -1,19 +1,38 @@
-import React, {useState} from 'react';
-import './styles.css';
+import React from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './styles.scss';
 
-const App = () => {
-    const [title, setTitle] = useState('Hello React!');
-    
-    const [inputValue, setInputValue] = useState('')
+import ListItemsPage from './pages/ListItemsPage';
+import CreateItemPage from './pages/CreateItemPage';
+import EditItemPage from './pages/EditItemPage';
+import Page404 from './pages/Page404';
 
-    return (
-        <>
-            <h1>{title}</h1>
-            <div><input placeholder="Enter your name" value={inputValue} onChange={(event)=>{setInputValue( event.target.value )}} /></div>
-            <div><button onClick={()=>setTitle('Welcome to React, ' + (inputValue ? inputValue : 'Anonymous person') + '!'  )}>Send</button></div>
-        </>
-    )
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/items" />
+        </Route>
+
+        <Route path="/items/edit/:id">
+          <EditItemPage/>
+        </Route>
+
+        <Route path="/items/add">
+          <CreateItemPage/>
+        </Route>
+    
+        <Route path="/items">
+          <ListItemsPage/>
+        </Route>
+
+        <Route path="*">
+          <Page404/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App;

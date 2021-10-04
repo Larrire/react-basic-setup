@@ -1,0 +1,25 @@
+form#form {
+  header {
+    h4 {
+      color: #555;
+      font-family: sans-serif;
+    }
+  }
+  main {
+    section {
+      padding-top: 20px;
+
+      label {
+        color: #666;
+        font-family: sans-serif;
+      }
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        padding: 5px;
+        font-size: 18px;
+      }
+    }
+  }
+}
